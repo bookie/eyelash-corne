@@ -115,10 +115,10 @@
         navi_layer {
             display-name = "navi";
             bindings = <
-&kp LS(TAB)       &kp F1        &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP                              &mmv MOVE_UP                     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_ASTERISK  &kp KP_DIVIDE  &trans
-&kp LC(TAB)       &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_N6        &kp KP_MINUS     &trans         &trans
-&kp LEFT_CONTROL  &kp LEFT_ALT  &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp F12        &trans                    &mmv MOVE_DOWN                   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_N3        &kp KP_PLUS      &kp KP_DIVIDE  &trans
-                                                &trans          &trans           &trans                                                                    &trans           &kp KP_NUMBER_0  &kp KP_DOT
+&kp LS(TAB)       &kp F1            &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP                              &mmv MOVE_UP                     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_ASTERISK  &kp KP_DIVIDE  &trans
+&kp LC(TAB)       &kp LC(LEFT_WIN)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_N6        &kp KP_MINUS     &trans         &trans
+&kp LEFT_CONTROL  &kp LEFT_ALT      &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp F12        &trans                    &mmv MOVE_DOWN                   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_N3        &kp KP_PLUS      &kp KP_DIVIDE  &trans
+                                                    &trans          &trans           &trans                                                                    &trans           &kp KP_NUMBER_0  &kp KP_DOT
             >;
 
             sensor-bindings = <&scroll_encoder>;
