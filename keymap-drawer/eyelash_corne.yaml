@@ -207,10 +207,10 @@ layers:
   - KP 7
   - KP 8
   - KP 9
+  - KP MINUS
   - KP ASTERISK
-  - KP DIVIDE
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+$$mdi:keyboard-tab$$
+  - Ctl+F
   - Ctl+LEFT WIN
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -222,8 +222,8 @@ layers:
   - KP 4
   - KP 5
   - KP 6
-  - KP MINUS
-  - {t: '$$mdi:transfer$$', type: trans}
+  - KP PLUS
+  - KP DIVIDE
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
@@ -236,7 +236,7 @@ layers:
   - KP 1
   - KP 2
   - KP 3
-  - KP PLUS
+  - KP DOT
   - KP DIVIDE
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -244,7 +244,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - KP 0
-  - KP DOT
+  - KP 0
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
