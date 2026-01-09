@@ -42,13 +42,13 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:keyboard-esc$$
-  - LGUI
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:apple-keyboard-option$$
   - {t: KP ENTER, h: NUMBER}
   - {t: '$$mdi:keyboard-space$$', h: NAVI}
-  - {t: '$$mdi:keyboard-return$$', h: Fn}
+  - {t: '$$mdi:keyboard-space$$', h: Fn}
   - SYMBOL
-  - $$mdi:apple-keyboard-option$$
+  - RIGHT WIN
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
@@ -143,8 +143,8 @@ layers:
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
@@ -226,7 +226,7 @@ layers:
   - KP DIVIDE
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
+  - Sft+Alt+F12
   - Ctl+X
   - Ctl+C
   - Ctl+V
@@ -237,14 +237,14 @@ layers:
   - KP 2
   - KP 3
   - KP DOT
-  - KP DIVIDE
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - KP 0
-  - KP 0
+  - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
