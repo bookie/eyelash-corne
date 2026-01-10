@@ -46,7 +46,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: KP ENTER, h: NUMBER}
   - {t: '$$mdi:keyboard-space$$', h: NAVI}
-  - '&lt_rgb3 ENTER'
+  - {t: '$$mdi:keyboard-return$$', h: '&mo_rgb3'}
   - '&mo_rgb2'
   - RIGHT WIN
   NUMBER:
