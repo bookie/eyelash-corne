@@ -44,8 +44,8 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
   - $$mdi:apple-keyboard-option$$
-  - {t: KP ENTER, h: NUMBER}
-  - {t: '$$mdi:keyboard-space$$', h: NAVI}
+  - {t: KP ENTER, h: '&mo_rgb1'}
+  - {t: '$$mdi:keyboard-space$$', h: '&mo_rgb4'}
   - {t: '$$mdi:keyboard-return$$', h: '&mo_rgb3'}
   - '&mo_rgb2'
   - RIGHT WIN
@@ -93,7 +93,7 @@ layers:
   - END
   - PG DN
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - INS
   - $$mdi:backspace-reverse-outline$$
@@ -241,7 +241,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - KP 0
   - {t: '$$mdi:transfer$$', type: trans}
