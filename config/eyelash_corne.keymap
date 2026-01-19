@@ -35,13 +35,16 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings
-                = <&macro_press &mo 1>
-                , <&macro_tap &rgb_ug RGB_COLOR_HSB(60,100,100)>
-                , <&macro_pause_for_release>
-                , <&macro_release &mo 1>
-                , <&macro_tap &rgb_ug RGB_COLOR_HSB(128,100,1)>
-                ;
+            bindings =
+                <&macro_press>,
+                <&mo 1>,
+                <&macro_tap>,
+                <&rgb_ug RGB_COLOR_HSB(60,100,100)>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 1>,
+                <&macro_tap>,
+                <&rgb_ug RGB_COLOR_HSB(128,100,1)>;
         };
 
         mo_rgb2: mo_rgb2 {
@@ -49,13 +52,16 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings
-                = <&macro_press &mo 2>
-                , <&macro_tap &rgb_ug RGB_COLOR_HSB(300,100,100)>
-                , <&macro_pause_for_release>
-                , <&macro_release &mo 2>
-                , <&macro_tap &rgb_ug RGB_COLOR_HSB(128,100,1)>
-                ;
+            bindings =
+                <&macro_press>,
+                <&mo 2>,
+                <&macro_tap>,
+                <&rgb_ug RGB_COLOR_HSB(300,100,100)>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 2>,
+                <&macro_tap>,
+                <&rgb_ug RGB_COLOR_HSB(128,100,1)>;
         };
 
         mo_rgb3: mo_rgb3 {
@@ -63,13 +69,16 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings
-                = <&macro_press &mo 3>
-                , <&macro_tap &rgb_ug RGB_COLOR_HSB(180,100,100)>
-                , <&macro_pause_for_release>
-                , <&macro_release &mo 3>
-                , <&macro_tap &rgb_ug RGB_COLOR_HSB(128,100,1)>
-                ;
+            bindings =
+                <&macro_press>,
+                <&mo 3>,
+                <&macro_tap>,
+                <&rgb_ug RGB_COLOR_HSB(180,100,100)>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 3>,
+                <&macro_tap>,
+                <&rgb_ug RGB_COLOR_HSB(128,100,1)>;
         };
 
         mo_rgb4: mo_rgb4 {
@@ -77,13 +86,16 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings
-                = <&macro_press &mo 4>
-                , <&macro_tap &rgb_ug RGB_COLOR_HSB(30,100,100)>
-                , <&macro_pause_for_release>
-                , <&macro_release &mo 4>
-                , <&macro_tap &rgb_ug RGB_COLOR_HSB(128,100,1)>
-                ;
+            bindings =
+                <&macro_press>,
+                <&mo 4>,
+                <&macro_tap>,
+                <&rgb_ug RGB_COLOR_HSB(30,100,100)>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 4>,
+                <&macro_tap>,
+                <&rgb_ug RGB_COLOR_HSB(128,100,1)>;
         };
     };
 
@@ -185,10 +197,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&td_tab_esc  &kp Q  &kp W  &kp E         &kp R           &kp T                               &kp UP                &kp Y        &kp U  &kp I          &kp O    &kp P     &kp BSPC
-&td0         &kp A  &kp S  &kp D         &kp F           &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K          &kp L    &kp SEMI  &kp SQT
-&kp LCTRL    &kp Z  &kp X  &kp C         &kp V           &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp ESCAPE
-                           &kp LEFT_ALT  &lt_rgb1 0 KP_ENTER  &lt_rgb4 0 SPACE                                               &lt_rgb3 0 ENTER    &mo_rgb2  &kp RIGHT_WIN
+&kp TAB    &kp Q           &kp W           &kp E               &kp R               &kp T                               &kp UP                &kp Y        &kp U                &kp I              &kp O            &kp P               &kp BSPC
+&kp LSHFT  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D    &mt LEFT_CONTROL F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &mt RIGHT_CONTROL J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &kp SQT
+&kp LCTRL  &kp Z           &kp X           &kp C               &kp V               &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M                &kp COMMA          &kp DOT          &kp FSLH            &kp ESCAPE
+                                           &mt LEFT_ALT ENTER  &mo 1               &lt 4 SPACE                                               &lt 3 ENTER  &mo 2                &lt 5 RIGHT_GUI
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -197,10 +209,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                     &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &trans           &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &trans                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                         &trans        &trans        &trans                                                                      &kp INS          &kp DEL          &trans
+&kp ESCAPE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                            &mmv MOVE_UP                     &kp N6    &kp N7    &kp N8  &kp N9     &kp N0    &kp BSPC
+&trans      &trans  &trans  &trans  &trans  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &kp PG_UP
+&trans      &trans  &trans  &trans  &trans  &trans  &trans                    &mmv MOVE_DOWN                   &trans    &trans    &trans  &trans     &kp END   &kp PG_DN
+                            &trans  &trans  &trans                                                             &kp INS   &kp DEL   &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -234,9 +246,21 @@
             display-name = "NAVI";
             bindings = <
 &kp LS(TAB)       &kp F1            &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP                              &mmv MOVE_UP                     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_ASTERISK  &trans
-&kp LC(F)         &kp LC(LEFT_WIN)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_N6        &kp KP_PLUS   &kp KP_DIVIDE    &trans
+&kp LEFT_ALT      &kp LC(LEFT_WIN)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_N6        &kp KP_PLUS   &kp KP_DIVIDE    &trans
 &kp LEFT_CONTROL  &kp LS(LA(F12))   &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp F12        &trans                    &mmv MOVE_DOWN                   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_N3        &kp KP_DOT    &trans           &trans
                                                     &trans          &trans           &trans                                                                    &trans           &kp KP_NUMBER_0  &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        MISC_LAYER {
+            display-name = "MISC";
+            bindings = <
+&kp ESCAPE  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                     &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
+&trans      &trans           &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
+&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &trans                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
+                                             &trans        &trans        &trans                                                                      &kp INS          &kp DEL          &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
