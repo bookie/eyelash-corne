@@ -50,7 +50,7 @@ layers:
   - SYMBOL
   - {t: RIGHT GUI, h: MISC}
   NUMBER:
-  - $$mdi:keyboard-esc$$
+  - $$mdi:keyboard-tab-reverse$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -197,7 +197,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   NAVI:
-  - $$mdi:keyboard-tab-reverse$$
+  - $$mdi:keyboard-esc$$
   - F1
   - HOME
   - $$mdi:arrow-up-bold$$
@@ -297,3 +297,7 @@ layers:
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
+- p: [3, 2]
+  k: Gui+Ctl+$$mdi:arrow-left-bold$$
+- p: [3, 4]
+  k: Gui+Ctl+$$mdi:arrow-right-bold$$
