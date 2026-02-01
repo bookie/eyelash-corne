@@ -65,9 +65,9 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - '&DesktopLeft'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&DesktopRIght'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
@@ -297,7 +297,3 @@ layers:
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
-- p: [3, 2]
-  k: Gui+Ctl+$$mdi:arrow-left-bold$$
-- p: [3, 4]
-  k: Gui+Ctl+$$mdi:arrow-right-bold$$
