@@ -105,7 +105,8 @@
                 <&macro_press>,
                 <&kp LC(LEFT_GUI)>,
                 <&macro_tap>,
-                <&kp LEFT_ARROW>;
+                <&kp LEFT_ARROW>,
+                <&macro_release>;
 
             label = "DESKTOPLEFT";
         };
@@ -117,7 +118,8 @@
                 <&macro_press>,
                 <&kp LC(LEFT_GUI)>,
                 <&macro_tap>,
-                <&kp RIGHT_ARROW>;
+                <&kp RIGHT_ARROW>,
+                <&macro_release>;
 
             label = "DESKTOPRIGHT";
         };
