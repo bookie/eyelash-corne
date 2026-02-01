@@ -101,14 +101,24 @@
         DesktopLeft: DesktopLeft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LEFT_GUI) &kp LEFT_ARROW>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(LEFT_GUI)>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>;
+
             label = "DESKTOPLEFT";
         };
 
         DesktopRIght: DesktopRIght {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LEFT_GUI) &kp RIGHT_ARROW>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(LEFT_GUI)>,
+                <&macro_tap>,
+                <&kp RIGHT_ARROW>;
+
             label = "DESKTOPRIGHT";
         };
     };
